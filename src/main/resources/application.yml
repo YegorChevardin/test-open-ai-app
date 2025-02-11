@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: testOpenAiApp
+  ai:
+    openai:
+      api-key: "${OPENAPI_KEY:bummykey}"
