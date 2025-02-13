@@ -1,0 +1,4 @@
+application:
+  ai:
+    mock:
+      enabled: true
