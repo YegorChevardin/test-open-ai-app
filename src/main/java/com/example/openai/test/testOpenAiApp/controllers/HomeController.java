@@ -21,8 +21,8 @@ public class HomeController {
     }
 
     @PostMapping("request")
-    public String handlePromptRequest(@RequestParam("search") String searchPrompt, Model model) {
-        var response = openAiService.getPromptResponse(searchPrompt);
+    public String handlePromptRequest(@RequestParam("language") String language, Model model) {
+        var response = openAiService.getPromptResponse(language);
         model.addAttribute("response", response);
         return "home";
     }
